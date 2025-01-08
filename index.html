@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <title>小游戏平台</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>欢迎来到小游戏综合平台</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('rsp.rsp_index') }}">石头剪刀布</a></li>
+            <li><a href="{{ url_for('guess.guess_index') }}">猜数字</a></li>
+            <li><a href="{{ url_for('minesweeper.minesweeper_index') }}">扫雷</a></li>
+            <li><a href="{{ url_for('maze.index') }}">迷宫生成器</a></li>
+            <li><a href="{{ url_for('shooter.index') }}">简易射击游戏</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

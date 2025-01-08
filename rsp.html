@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>剪刀石头布游戏</title>
+    <link rel="stylesheet" href="../static/css/rsp.css">
+</head>
+<body>
+    <div class="container">
+        <h1>剪刀石头布游戏</h1>
+        <div class="buttons">
+            <button class="choice-button" data-choice="石头">石头</button>
+            <button class="choice-button" data-choice="布">布</button>
+            <button class="choice-button" data-choice="剪刀">剪刀</button>
+        </div>
+        <div id="result"></div>
+        <div id="score">
+            <span id="user-score">你: 0</span>,
+            <span id="computer-score">电脑: 0</span>
+        </div>
+        <div id="overall-winner"></div>
+        <!-- 新的容器用于居中重置按钮 -->
+        <div class="reset-button-container">
+            <button id="reset-button">重置游戏</button>
+        </div>
+    </div>
+    </div>
+
+    <script src="../static/js/rsp.js"></script>
+</body>
+</html>
