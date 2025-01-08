@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../imgs/index_bgi.png);
+}
+
+.container {
+    text-align: center;
+}
+
+/* button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+} */
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.out {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background-color: #918495a3;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    /* 添加初始阴影 */
+    transition: all 0.3s ease;
+    /* 设置过渡效果 */
+    background-color: #af9dad;
+
+}
+
+button:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    /* 鼠标移入时加深阴影 */
+    transform: translateY(-2px);
+    /* 鼠标移入时按钮上移2px，产生按下的视觉效果 */
+}
+
+button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* 鼠标点击时减小阴影 */
+    transform: translateY(2px);
+    /* 鼠标点击时按钮下移2px，产生按下的视觉效果 */
+}

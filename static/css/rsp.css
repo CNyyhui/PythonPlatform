@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    background-image: url(../imgs/index_bgi.png);
+    /* 设置背景图片，路径为相对路径 */
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+#result, #score, #overall-winner {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* 新增样式以居中重置按钮 */
+.reset-button-container {
+    text-align: center; /* 使内容居中 */
+    margin-top: 20px;  /* 上方间距 */
+}

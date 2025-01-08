@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    background-image: url(../imgs/index_bgi.png);
+    /* 设置背景图片，路径为相对路径 */
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+}

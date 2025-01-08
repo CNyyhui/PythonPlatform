@@ -1,0 +1,31 @@
+#generate-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    /* 添加初始阴影 */
+    transition: all 0.3s ease;
+    /* 设置过渡效果 */
+    background-color: #af9dad;
+}
+
+#generate-button:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    /* 鼠标移入时加深阴影 */
+    transform: translateY(-2px);
+    /* 鼠标移入时按钮上移2px，产生按下的视觉效果 */
+}
+
+#generate-button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* 鼠标点击时减小阴影 */
+    transform: translateY(2px);
+    /* 鼠标点击时按钮下移2px，产生按下的视觉效果 */
+}
+
+#maze-display {
+    color: #ccc;
+}

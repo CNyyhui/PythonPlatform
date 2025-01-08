@@ -1,0 +1,23 @@
+body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;  /* 居中对齐 */
+            justify-content: center; /* 垂直居中 */
+            height: 100vh; /* 让页面高度占满视口 */
+            margin: 0; /* 去除默认边距 */
+    background-image: url(../imgs/index_bgi.png);
+    /* 设置背景图片，路径为相对路径 */
+}
+#gameCanvas {
+    border: 1px solid black;
+    margin-bottom: 20px; /* 增加画布与其他元素之间的间距 */
+}
+#score {
+    font-size: 20px; /* 设置得分的字体大小 */
+    margin-bottom: 10px; /* 增加得分与按钮之间的间距 */
+}
+#restartButton {
+    display: none;
+    padding: 10px 20px; /* 增加按钮内边距 */
+    font-size: 16px; /* 设置按钮字体大小 */
+}

@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    background-image: url(../imgs/index_bgi.png);
+    /* 设置背景图片，路径为相对路径 */
+}
+h1 {
+    color: #333;
+}
+ul {
+    list-style: none;
+}
+li {
+    margin: 10px 0;
+}
+a {
+    text-decoration: none;
+    color: #007BFF;
+}

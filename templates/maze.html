@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>迷宫生成器</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='minesweeper.js') }}"></script>
+</head>
+<body>
+    <h1>迷宫生成器</h1>
+    <button id="generate-button">生成迷宫</button>
+    <pre id="maze-display"></pre>
+    <script>
+        document.getElementById('generate-button').onclick = function() {
+            fetch('/maze/generate')
+                .then(response => response.json())
+                .then(data => {
+                    const maze = data.maze;
+                    const mazeDisplay = document.getElementById('maze-display');
+                    mazeDisplay.textContent = maze.map(row => row.join('')).join('\n');
+                });
+        };
+    </script>
+</body>
+</html>
